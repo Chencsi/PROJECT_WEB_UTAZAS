@@ -1,8 +1,10 @@
 /* Tagek */
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url('../img/bg.png');
-    background-size: 100%;
+    background-color: rgb(30, 30, 30);
+}
+section{
+    height: 90vh;
 }
 
 /* Osztályok */
@@ -20,13 +22,31 @@ body{
 .nav-logo{
     width: 15vh;
 }
-
-/* Azonosítók */
-#kezdolap{
-    padding-top: 20vh;
+.text-justify{
+    text-align: justify;
 }
 
-/* Töréspontok */
+/* Azonosítók */
 
+
+/* Töréspontok */
+    /* Telefon */
+@media only screen and (max-width: 700px) {
+    #kezdolap{
+        padding-top: 10vh;
+    }
+} 
+    /* Tablet */
+@media only screen and (max-width: 990px) {
+    #kezdolap{
+        padding-top: 10vh;
+    }
+}   
+    /* Asztal */
+@media only screen and (min-width: 990px) {
+    #kezdolap{
+        padding-top: 20vh;
+    }
+} 
 
 /* Animációk */
