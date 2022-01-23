@@ -5,6 +5,7 @@ body{
 header{
     position: fixed;
     width: 100%;
+    opacity: 100%;
 }
 section{
     animation: fadeIn 1s;
@@ -49,6 +50,10 @@ section{
 } 
     /* Tablet */
 @media only screen and (max-width: 990px) {
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
     #kezdolap{
         padding-top: 17vh;
     }
