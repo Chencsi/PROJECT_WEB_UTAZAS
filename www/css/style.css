@@ -1,0 +1,32 @@
+/* Tagek */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('../img/bg.png');
+    background-size: 100%;
+}
+
+/* Osztályok */
+.bg-custom-blue{
+    background-color: #073a4b;
+    /* background-color: #073a4b00; */
+}
+.btn-custom-blue{
+    background-color: #0c566e;
+    padding: 10px;
+}
+.btn-custom-blue:hover{
+    background-color: #073a4b;
+}
+.nav-logo{
+    width: 15vh;
+}
+
+/* Azonosítók */
+#kezdolap{
+    padding-top: 20vh;
+}
+
+/* Töréspontok */
+
+
+/* Animációk */
