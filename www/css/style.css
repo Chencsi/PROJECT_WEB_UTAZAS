@@ -1,10 +1,17 @@
 /* Tagek */
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(30, 30, 30);
+}
+header{
+    position: fixed;
+    width: 100%;
 }
 section{
-    height: 90vh;
+    animation: fadeIn 1s;
+    height: 100vh;
+    padding-top: 12vh;
+    scroll-behavior: smooth;
+    scrollbar-color: red;
 }
 
 /* Osztályok */
@@ -30,23 +37,43 @@ section{
 
 
 /* Töréspontok */
-    /* Telefon */
-@media only screen and (max-width: 700px) {
+    /* Asztal */
+@media only screen and (min-width: 990px) {
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
     #kezdolap{
-        padding-top: 10vh;
+        padding-top: 25vh;
     }
 } 
     /* Tablet */
 @media only screen and (max-width: 990px) {
     #kezdolap{
-        padding-top: 10vh;
+        padding-top: 17vh;
     }
-}   
-    /* Asztal */
-@media only screen and (min-width: 990px) {
+}  
+    /* Telefon */
+@media only screen and (max-width: 770px) {
     #kezdolap{
-        padding-top: 20vh;
+        padding-top: 15vh;
     }
-} 
+}  
 
 /* Animációk */
+@keyframes fadeOut {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
