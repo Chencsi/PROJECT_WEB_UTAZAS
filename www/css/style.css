@@ -1,13 +1,17 @@
 /* Tagek */
-body{
+
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(231, 231, 231);
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     opacity: 100%;
 }
-section{
+
+section {
     animation: fadeIn 1s;
     height: 100vh;
     padding-top: 12vh;
@@ -15,70 +19,89 @@ section{
     scrollbar-color: red;
 }
 
+
 /* Osztályok */
-.bg-custom-blue{
+
+.bg-custom-blue {
     background-color: #073a4b;
     /* background-color: #073a4b00; */
 }
-.btn-custom-blue{
+
+.btn-custom-blue {
     background-color: #0c566e;
     padding: 10px;
 }
-.btn-custom-blue:hover{
+
+.btn-custom-blue:hover {
     background-color: #073a4b;
 }
-.nav-logo{
+
+.nav-logo {
     width: 15vh;
 }
-.text-justify{
+
+.text-justify {
     text-align: justify;
 }
+
 
 /* Azonosítók */
 
 
 /* Töréspontok */
-    /* Asztal */
+
+
+/* Asztal */
+
 @media only screen and (min-width: 990px) {
     .stop-scrolling {
         height: 100%;
         overflow: hidden;
     }
-    #kezdolap{
+    #kezdolap {
         padding-top: 25vh;
     }
-} 
-    /* Tablet */
+}
+
+
+/* Tablet */
+
 @media only screen and (max-width: 990px) {
     .stop-scrolling {
         height: 100%;
         overflow: hidden;
     }
-    #kezdolap{
+    #kezdolap {
         padding-top: 17vh;
     }
-}  
-    /* Telefon */
+}
+
+
+/* Telefon */
+
 @media only screen and (max-width: 770px) {
-    #kezdolap{
+    #kezdolap {
         padding-top: 15vh;
     }
-}  
+}
+
 
 /* Animációk */
+
 @keyframes fadeOut {
-    0%{
+    0% {
         opacity: 100%;
     }
-    100%{
+    100% {
         opacity: 0%;
     }
 }
+
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0%;
     }
-    100%{
+    100% {
         opacity: 100%;
     }
 }
