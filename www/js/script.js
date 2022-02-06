@@ -14,6 +14,7 @@ function mainFunction() {
     for (let i = 0; i < links.childElementCount; i++) {
         navLinks.push(linksChilds[i])
     }
+
 }
 
 // Változók
