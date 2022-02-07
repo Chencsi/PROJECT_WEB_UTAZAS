@@ -13,17 +13,18 @@
 
     <!-- Stílusok meghívása -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/card.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body class="" onload="mainFunction()">
+<body class="!stop-scrolling" onload="mainFunction()" onscroll="scrollFunction()">
 
     <!-- Navigáció, Fejléc -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-custom-blue">
+        <nav class="navbar navbar-expand-md navbar-dark" id="nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#kezdolap"><img src="img/logo.png" class="nav-logo"></a>
+                <a class="navbar-brand" href="#kezdolap"><img src="img/logo1.png" class="nav-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,98 +54,29 @@
                 <img src="img/airplane.png" class="img-fluid d-none d-lg-block">
             </article>
         </section>
+        <hr>
 
         <!-- Bemutatkozás -->
         <section class="row" id="bemutatkozas">
             <article class="col-10 offset-1 col-md-12 offset-md-0">
                 <h2 class="text-center">Miért válasszon minket?</h2>
             </article>
-            <article class="col-10 offset-1 col-sm-12 offset-sm-0 col-lg-8 offset-lg-2">
+            <article class="col-10 offset-1 col-sm-12 offset-sm-0 col-lg-10 offset-lg-1">
                 <p class="mb-4 text-justify szoveg">
                     Cégünk több év tapasztalattal rendelkezik a turisztikai piacon, ezzel tudjuk bizonyítani megbízhatóságunkat. Néhány munkatársunk több éves, akár több tizedes képzetséggel rendelkezik. Hangsúlyt fektetünk a szakmai fejlődésekre, illetve kollégáink fejlesztésére, a korral való haladásra. Viszont a legnagyobb hangsúly az ügyfeleinken van, az az Önön. Mindig a legjobbat keressük, és ezt is nyújtuk utasaink számára, hogy ezzel elégedettségüket elérjük, és megőrizzük a bizalmukat. Korszerű technikával dolgozunk, mely folyamatos fejlesztés alatt áll, itt nem csak dolgozunk, hanem élvezzük is amit csinálunk, és ezt az utazásain is érezni fogja.
                 </p>
             </article>
         </section>
+        <hr>
 
         <!-- Ajánlataink -->
         <section class="row text-dark" id="ajanlataink">
 
-            <!-- Felugró ablakok -->
-            <div class="modal fade" id="drop1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Úticél: Firenze</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Budapest - Firenze <br>
-                            49 + 1 fő <br>
-                            Busz: Setra <br>
-                            Felszereltség: Panoráma üveg, klíma, hűtő, mikrofon <br>
-                            Kirándulás: 4 nap <br>
-                            Szállás: 4 éjszaka - 80.000Ft <br>
-                            14.990Ft/fő <br>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
-                            <button type="button" class="btn btn-success">Tovább a foglaláshoz</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="drop2">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Úticél: Győr</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Budapest - Győr <br>
-                            49 + 1 fő <br>
-                            Kirándulás: 3 napos <br>
-                            Szállás: 2 éj, 35.800Ft <br>
-                            Busz: Setra <br>
-                            Felszereltség: Panoráma üveg, klíma, hűtő, mikrofon <br>
-                            4.990Ft/fő <br>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
-                            <button type="button" class="btn btn-success">Tovább a foglaláshoz</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="drop3">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Úticél: Kecskemét</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Budapest - Kecskemét <br>
-                            49 + 1 fő <br>
-                            Busz: Mercedes <br>
-                            Felszereltség: Panoráma üveg, klíma, hűtő, mikrofon <br>
-                            3.990Ft/fő <br>
-                            Kirándulás: 2 napos <br>
-                            Szállás: 9800Ft 1 éj <br>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
-                            <button type="button" class="btn btn-success">Tovább a foglaláshoz</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- Kártyák -->
             <article class="col-10 offset-1 col-md-12 offset-md-0">
-                <h2 class="text-center ajanlataink">Ajánlataink</h2>
+                <h2 class="text-center ajanlataink mb-5">Ajánlataink</h2>
             </article>
-            <article class="col-10 offset-1 offset-lg-0 col-lg-4 mt-2 mt-lg-0">
+            <article class="col-10 offset-1 offset-lg-0 col-lg-4 mt-2 mt-lg-0 pt-lg-4">
                 <div class="solution_cards_box">
                     <div class="solution_card text-dark">
                         <div class="hover_color_bubble"></div>
@@ -164,7 +96,7 @@
                     </div>
                 </div>
             </article>
-            <article class="col-10 offset-1 offset-lg-0 col-lg-4 mt-2 mt-lg-0">
+            <article class="col-10 offset-1 offset-lg-0 col-lg-4 mt-2 mt-lg-0 pt-lg-4">
                 <div class="solution_cards_box">
                     <div class="solution_card text-dark">
                         <div class="hover_color_bubble"></div>
@@ -183,7 +115,7 @@
                     </div>
                 </div>
             </article>
-            <article class="col-10 offset-1 offset-lg-0 col-lg-4 mt-2 mt-lg-0">
+            <article class="col-10 offset-1 offset-lg-0 col-lg-4 mt-2 mt-lg-0 pt-lg-4">
                 <div class="solution_cards_box">
                     <div class="solution_card text-dark">
                         <div class="hover_color_bubble"></div>
@@ -202,21 +134,149 @@
                     </div>
                 </div>
             </article>
-
         </section>
+        <hr>
 
         <!-- Kapcsolat -->
-        <section class="" id="kapcsolat">
-
+        <section class="row" id="kapcsolat">
+            <article class="pt-5 col-12 offset-0 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <div class="pt-5 container">
+                    <div class="screen">
+                      <div class="screen-header">
+                        <div class="screen-header-left">
+                          <div class="screen-header-button close"></div>
+                          <div class="screen-header-button maximize"></div>
+                          <div class="screen-header-button minimize"></div>
+                        </div>
+                        <div class="screen-header-right">
+                          <div class="screen-header-ellipsis"></div>
+                          <div class="screen-header-ellipsis"></div>
+                          <div class="screen-header-ellipsis"></div>
+                        </div>
+                      </div>
+                      <div class="screen-body">
+                        <div class="screen-body-item left">
+                          <div class="app-title">
+                            <span>KÉRDÉSED</span>
+                            <span>VAN?</span>
+                          </div>
+                          <div class="app-contact">TELEFON : +62 81 314 928 595</div>
+                        </div>
+                        <div class="screen-body-item">
+                          <div class="app-form">
+                            <div class="app-form-group">
+                              <input class="app-form-control" placeholder="NÉV">
+                            </div>
+                            <div class="app-form-group">
+                              <input class="app-form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="app-form-group">
+                              <input class="app-form-control" placeholder="ÜZENET">
+                            </div>
+                            <div class="app-form-group buttons">
+                              <button class="app-form-button">KÜLDÉS</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="credits">
+                      inspired by
+                      <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+                        <svg class="dribbble" viewBox="0 0 200 200">
+                          <g stroke="#ffffff" fill="none">
+                            <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+                            <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+                            <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+                            <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+                          </g>
+                        </svg>
+                        Gururaj
+                      </a>
+                    </div>
+                  </div>
+            </article>
         </section>
 
     </main>
 
     <!-- Lábléc, források -->
-    <footer>
-        <a href='https://dryicons.com/free-icons/travel-icon'> Icon by Dryicons </a>
-        <a href="https://freefrontend.com/bootstrap-cards/"> Cards by freefrontend</a>
-    </footer>
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>Copyright &copy; Chen Kevin, Szlávik Bence László, Drávai Dominik</small>
+        </div>
+      </footer>
+
+    <!-- Felugró ablakok -->
+    <div class="modal fade" id="drop1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Úticél: Firenze</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Budapest - Firenze <br>
+                    49 + 1 fő <br>
+                    Busz: Setra <br>
+                    Felszereltség: Panoráma üveg, klíma, hűtő, mikrofon <br>
+                    Kirándulás: 4 nap <br>
+                    Szállás: 4 éjszaka - 80.000Ft <br>
+                    14.990Ft/fő <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                    <button type="button" class="btn btn-success">Tovább a foglaláshoz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="drop2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Úticél: Győr</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Budapest - Győr <br>
+                    49 + 1 fő <br>
+                    Kirándulás: 3 napos <br>
+                    Szállás: 2 éj, 35.800Ft <br>
+                    Busz: Setra <br>
+                    Felszereltség: Panoráma üveg, klíma, hűtő, mikrofon <br>
+                    4.990Ft/fő <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                    <button type="button" class="btn btn-success">Tovább a foglaláshoz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="drop3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Úticél: Kecskemét</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Budapest - Kecskemét <br>
+                    49 + 1 fő <br>
+                    Busz: Mercedes <br>
+                    Felszereltség: Panoráma üveg, klíma, hűtő, mikrofon <br>
+                    3.990Ft/fő <br>
+                    Kirándulás: 2 napos <br>
+                    Szállás: 9800Ft 1 éj <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                    <button type="button" class="btn btn-success">Tovább a foglaláshoz</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scriptek meghívása -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

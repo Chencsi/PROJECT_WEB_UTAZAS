@@ -2,7 +2,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    background-image: linear-gradient(290deg, #5f0a87 0%, #a4508b 74%);
 
 }
 
@@ -22,13 +22,12 @@ section {
 }
 
 h2{
-    font-size:120px;
 	letter-spacing:0.1em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
     text-shadow: 
-				8px 8px #ff1fc7,
+				8px 8px #f81fff,
 				20px 20px #000000;
 }
 
@@ -87,12 +86,14 @@ h2{
         height: 100%;
         overflow: hidden;
     }
-
+    h2{
+        font-size: 90px;
+    }
     #kezdolap {
         padding-top: 25vh;
     }
     .szoveg{
-        font-size: 17pt
+        font-size: 18px
     }
 }
 
@@ -107,12 +108,15 @@ h2{
     #kezdolap {
         padding-top: 17vh;
     }
+    h2{
+        font-size: 70px;
+    }
     .ajanlataink{
         margin-top: 0vh;
         margin: 30px 0 120px 0;
     }
     .szoveg{
-        font-size: 17pt
+        font-size: 20px
     }
 }
 
